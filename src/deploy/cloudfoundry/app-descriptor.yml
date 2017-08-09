@@ -1,3 +1,5 @@
 ---
 applications:
 - type: basic-service
+  services:
+    - postgres-shared
