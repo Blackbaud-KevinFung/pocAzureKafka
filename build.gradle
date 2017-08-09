@@ -11,6 +11,7 @@ buildscript {
 }
 
 apply plugin: "blackbaud-internal-rest"
+apply plugin: "mybatis"
 apply plugin: "postgres"
 apply plugin: "blackbaud-templates"
 apply plugin: "spring-boot"
