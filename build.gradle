@@ -1,5 +1,6 @@
 buildscript {
     ext {
+        commonKafkaVersion = "3.+"
         springBootVersion = "1.4.1.RELEASE"
     }
     dependencies {
@@ -11,8 +12,7 @@ buildscript {
 }
 
 apply plugin: "blackbaud-internal-rest"
-apply plugin: "mybatis"
-apply plugin: "postgres"
+apply plugin: "kafka"
 apply plugin: "blackbaud-templates"
 apply plugin: "spring-boot"
 
@@ -32,13 +32,21 @@ sourceSets {
 
 dependencies {
     compile "com.blackbaud:common-spring-boot-rest:${springBootVersion}-2.+"
-    compile "com.blackbaud:common-spring-boot-persistence:${springBootVersion}-2.+"
-    compile "postgresql:postgresql:9.0-801.jdbc4"
-    compile "org.liquibase:liquibase-core"
+    compile ("com.blackbaud:common-kafka:${commonKafkaVersion}") {
+        exclude group: "log4j"
+    }
+    compile ("com.microsoft.azure:azure-servicebus:1.0.0-PREVIEW-3") {
+        exclude group: "org.slf4j"
+    }
+    compile "org.projectlombok:lombok"
+    compile "org.apache.avro:avro:1.7.7"
+    compile 'org.codehaus.jackson:jackson-core-asl:1.9.13'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
 
     clientCompile "com.blackbaud:common-spring-boot-rest:${springBootVersion}-2.+"
 
     mainTestCompile "com.blackbaud:common-spring-boot-rest-test:${springBootVersion}-2.+"
+    mainTestCompile "com.blackbaud:common-kafka-test:${commonKafkaVersion}"
     mainTestCompile "com.blackbaud:common-test:1.+"
     mainTestCompile "org.codehaus.groovy:groovy-all:2.4.7"
     mainTestCompile ("org.spockframework:spock-spring:1.0-groovy-2.4") {

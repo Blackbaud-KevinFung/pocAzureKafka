@@ -1,0 +1,33 @@
+[
+  {
+    "namespace": "com.blackbaud.pacazurekafka.domain",
+    "type": "record",
+    "name": "body",
+    "fields": [
+      {"name": "LegalEntityId", "type": "string"},
+      {"name": "EnvironmentId", "type": "string"},
+      {"name": "EntitlementId", "type": "string"},
+      {"name": "EntitlementType", "type": "string"},
+      {"name": "ErrorMessage", "type": ["string", "null"]},
+      {"name": "EntitlementEventActionType", "type": "int"}
+    ]
+  },
+  {
+    "namespace": "com.blackbaud.pacazurekafka.domain",
+    "type": "record",
+    "name": "topic",
+    "fields": [
+      {"name": "name", "type": "string"}
+    ]
+  },
+  {
+    "namespace": "com.blackbaud.pacazurekafka.domain",
+    "type": "record",
+    "name": "entitlement",
+    "fields": [
+      {"name": "body", "type": "body"},
+      {"name": "topic", "type": "topic"},
+      {"name": "schema", "type": "string"}
+    ]
+  }
+]
