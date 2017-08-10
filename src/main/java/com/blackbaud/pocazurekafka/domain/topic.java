@@ -3,11 +3,11 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package com.blackbaud.pacazurekafka.domain;  
+package com.blackbaud.pocazurekafka.domain;
 @SuppressWarnings("CPD-START")
 @org.apache.avro.specific.AvroGenerated
 public class topic extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"topic\",\"namespace\":\"com.blackbaud.pacazurekafka.domain\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"topic\",\"namespace\":\"com.blackbaud.pocazurekafka.domain\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.CharSequence name;
 
@@ -58,18 +58,18 @@ public class topic extends org.apache.avro.specific.SpecificRecordBase implement
   }
 
   /** Creates a new topic RecordBuilder */
-  public static com.blackbaud.pacazurekafka.domain.topic.Builder newBuilder() {
-    return new com.blackbaud.pacazurekafka.domain.topic.Builder();
+  public static topic.Builder newBuilder() {
+    return new topic.Builder();
   }
   
   /** Creates a new topic RecordBuilder by copying an existing Builder */
-  public static com.blackbaud.pacazurekafka.domain.topic.Builder newBuilder(com.blackbaud.pacazurekafka.domain.topic.Builder other) {
-    return new com.blackbaud.pacazurekafka.domain.topic.Builder(other);
+  public static topic.Builder newBuilder(topic.Builder other) {
+    return new topic.Builder(other);
   }
   
   /** Creates a new topic RecordBuilder by copying an existing topic instance */
-  public static com.blackbaud.pacazurekafka.domain.topic.Builder newBuilder(com.blackbaud.pacazurekafka.domain.topic other) {
-    return new com.blackbaud.pacazurekafka.domain.topic.Builder(other);
+  public static topic.Builder newBuilder(topic other) {
+    return new topic.Builder(other);
   }
   
   /**
@@ -82,11 +82,11 @@ public class topic extends org.apache.avro.specific.SpecificRecordBase implement
 
     /** Creates a new Builder */
     private Builder() {
-      super(com.blackbaud.pacazurekafka.domain.topic.SCHEMA$);
+      super(topic.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(com.blackbaud.pacazurekafka.domain.topic.Builder other) {
+    private Builder(topic.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
@@ -95,8 +95,8 @@ public class topic extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Creates a Builder by copying an existing topic instance */
-    private Builder(com.blackbaud.pacazurekafka.domain.topic other) {
-            super(com.blackbaud.pacazurekafka.domain.topic.SCHEMA$);
+    private Builder(topic other) {
+            super(topic.SCHEMA$);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
         fieldSetFlags()[0] = true;
@@ -109,7 +109,7 @@ public class topic extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'name' field */
-    public com.blackbaud.pacazurekafka.domain.topic.Builder setName(java.lang.CharSequence value) {
+    public topic.Builder setName(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.name = value;
       fieldSetFlags()[0] = true;
@@ -122,7 +122,7 @@ public class topic extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Clears the value of the 'name' field */
-    public com.blackbaud.pacazurekafka.domain.topic.Builder clearName() {
+    public topic.Builder clearName() {
       name = null;
       fieldSetFlags()[0] = false;
       return this;

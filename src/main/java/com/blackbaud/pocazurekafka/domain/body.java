@@ -3,11 +3,11 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package com.blackbaud.pacazurekafka.domain;  
+package com.blackbaud.pocazurekafka.domain;
 @SuppressWarnings("CPD-START")
 @org.apache.avro.specific.AvroGenerated
 public class body extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"body\",\"namespace\":\"com.blackbaud.pacazurekafka.domain\",\"fields\":[{\"name\":\"LegalEntityId\",\"type\":\"string\"},{\"name\":\"EnvironmentId\",\"type\":\"string\"},{\"name\":\"EntitlementId\",\"type\":\"string\"},{\"name\":\"EntitlementType\",\"type\":\"string\"},{\"name\":\"ErrorMessage\",\"type\":[\"string\",\"null\"]},{\"name\":\"EntitlementEventActionType\",\"type\":\"int\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"body\",\"namespace\":\"com.blackbaud.pocazurekafka.domain\",\"fields\":[{\"name\":\"LegalEntityId\",\"type\":\"string\"},{\"name\":\"EnvironmentId\",\"type\":\"string\"},{\"name\":\"EntitlementId\",\"type\":\"string\"},{\"name\":\"EntitlementType\",\"type\":\"string\"},{\"name\":\"ErrorMessage\",\"type\":[\"string\",\"null\"]},{\"name\":\"EntitlementEventActionType\",\"type\":\"int\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.CharSequence LegalEntityId;
   @Deprecated public java.lang.CharSequence EnvironmentId;
@@ -153,18 +153,18 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
   }
 
   /** Creates a new body RecordBuilder */
-  public static com.blackbaud.pacazurekafka.domain.body.Builder newBuilder() {
-    return new com.blackbaud.pacazurekafka.domain.body.Builder();
+  public static body.Builder newBuilder() {
+    return new body.Builder();
   }
   
   /** Creates a new body RecordBuilder by copying an existing Builder */
-  public static com.blackbaud.pacazurekafka.domain.body.Builder newBuilder(com.blackbaud.pacazurekafka.domain.body.Builder other) {
-    return new com.blackbaud.pacazurekafka.domain.body.Builder(other);
+  public static body.Builder newBuilder(body.Builder other) {
+    return new body.Builder(other);
   }
   
   /** Creates a new body RecordBuilder by copying an existing body instance */
-  public static com.blackbaud.pacazurekafka.domain.body.Builder newBuilder(com.blackbaud.pacazurekafka.domain.body other) {
-    return new com.blackbaud.pacazurekafka.domain.body.Builder(other);
+  public static body.Builder newBuilder(body other) {
+    return new body.Builder(other);
   }
   
   /**
@@ -182,11 +182,11 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
 
     /** Creates a new Builder */
     private Builder() {
-      super(com.blackbaud.pacazurekafka.domain.body.SCHEMA$);
+      super(body.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(com.blackbaud.pacazurekafka.domain.body.Builder other) {
+    private Builder(body.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.LegalEntityId)) {
         this.LegalEntityId = data().deepCopy(fields()[0].schema(), other.LegalEntityId);
@@ -215,8 +215,8 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Creates a Builder by copying an existing body instance */
-    private Builder(com.blackbaud.pacazurekafka.domain.body other) {
-            super(com.blackbaud.pacazurekafka.domain.body.SCHEMA$);
+    private Builder(body other) {
+            super(body.SCHEMA$);
       if (isValidValue(fields()[0], other.LegalEntityId)) {
         this.LegalEntityId = data().deepCopy(fields()[0].schema(), other.LegalEntityId);
         fieldSetFlags()[0] = true;
@@ -249,7 +249,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'LegalEntityId' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder setLegalEntityId(java.lang.CharSequence value) {
+    public body.Builder setLegalEntityId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.LegalEntityId = value;
       fieldSetFlags()[0] = true;
@@ -262,7 +262,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Clears the value of the 'LegalEntityId' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder clearLegalEntityId() {
+    public body.Builder clearLegalEntityId() {
       LegalEntityId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -274,7 +274,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'EnvironmentId' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder setEnvironmentId(java.lang.CharSequence value) {
+    public body.Builder setEnvironmentId(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.EnvironmentId = value;
       fieldSetFlags()[1] = true;
@@ -287,7 +287,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Clears the value of the 'EnvironmentId' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder clearEnvironmentId() {
+    public body.Builder clearEnvironmentId() {
       EnvironmentId = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -299,7 +299,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'EntitlementId' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder setEntitlementId(java.lang.CharSequence value) {
+    public body.Builder setEntitlementId(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.EntitlementId = value;
       fieldSetFlags()[2] = true;
@@ -312,7 +312,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Clears the value of the 'EntitlementId' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder clearEntitlementId() {
+    public body.Builder clearEntitlementId() {
       EntitlementId = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -324,7 +324,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'EntitlementType' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder setEntitlementType(java.lang.CharSequence value) {
+    public body.Builder setEntitlementType(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.EntitlementType = value;
       fieldSetFlags()[3] = true;
@@ -337,7 +337,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Clears the value of the 'EntitlementType' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder clearEntitlementType() {
+    public body.Builder clearEntitlementType() {
       EntitlementType = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -349,7 +349,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'ErrorMessage' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder setErrorMessage(java.lang.CharSequence value) {
+    public body.Builder setErrorMessage(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.ErrorMessage = value;
       fieldSetFlags()[4] = true;
@@ -362,7 +362,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Clears the value of the 'ErrorMessage' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder clearErrorMessage() {
+    public body.Builder clearErrorMessage() {
       ErrorMessage = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -374,7 +374,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'EntitlementEventActionType' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder setEntitlementEventActionType(int value) {
+    public body.Builder setEntitlementEventActionType(int value) {
       validate(fields()[5], value);
       this.EntitlementEventActionType = value;
       fieldSetFlags()[5] = true;
@@ -387,7 +387,7 @@ public class body extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Clears the value of the 'EntitlementEventActionType' field */
-    public com.blackbaud.pacazurekafka.domain.body.Builder clearEntitlementEventActionType() {
+    public body.Builder clearEntitlementEventActionType() {
       fieldSetFlags()[5] = false;
       return this;
     }

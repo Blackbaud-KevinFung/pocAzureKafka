@@ -3,14 +3,14 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package com.blackbaud.pacazurekafka.domain;  
+package com.blackbaud.pocazurekafka.domain;
 @SuppressWarnings("CPD-START")
 @org.apache.avro.specific.AvroGenerated
 public class entitlement extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"entitlement\",\"namespace\":\"com.blackbaud.pacazurekafka.domain\",\"fields\":[{\"name\":\"body\",\"type\":{\"type\":\"record\",\"name\":\"body\",\"fields\":[{\"name\":\"LegalEntityId\",\"type\":\"string\"},{\"name\":\"EnvironmentId\",\"type\":\"string\"},{\"name\":\"EntitlementId\",\"type\":\"string\"},{\"name\":\"EntitlementType\",\"type\":\"string\"},{\"name\":\"ErrorMessage\",\"type\":[\"string\",\"null\"]},{\"name\":\"EntitlementEventActionType\",\"type\":\"int\"}]}},{\"name\":\"topic\",\"type\":{\"type\":\"record\",\"name\":\"topic\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"}]}},{\"name\":\"schema\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"entitlement\",\"namespace\":\"com.blackbaud.pocazurekafka.domain\",\"fields\":[{\"name\":\"body\",\"type\":{\"type\":\"record\",\"name\":\"body\",\"fields\":[{\"name\":\"LegalEntityId\",\"type\":\"string\"},{\"name\":\"EnvironmentId\",\"type\":\"string\"},{\"name\":\"EntitlementId\",\"type\":\"string\"},{\"name\":\"EntitlementType\",\"type\":\"string\"},{\"name\":\"ErrorMessage\",\"type\":[\"string\",\"null\"]},{\"name\":\"EntitlementEventActionType\",\"type\":\"int\"}]}},{\"name\":\"topic\",\"type\":{\"type\":\"record\",\"name\":\"topic\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"}]}},{\"name\":\"schema\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public com.blackbaud.pacazurekafka.domain.body body;
-  @Deprecated public com.blackbaud.pacazurekafka.domain.topic topic;
+  @Deprecated public com.blackbaud.pocazurekafka.domain.body body;
+  @Deprecated public com.blackbaud.pocazurekafka.domain.topic topic;
   @Deprecated public java.lang.CharSequence schema;
 
   /**
@@ -23,7 +23,7 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
   /**
    * All-args constructor.
    */
-  public entitlement(com.blackbaud.pacazurekafka.domain.body body, com.blackbaud.pacazurekafka.domain.topic topic, java.lang.CharSequence schema) {
+  public entitlement(com.blackbaud.pocazurekafka.domain.body body, com.blackbaud.pocazurekafka.domain.topic topic, java.lang.CharSequence schema) {
     this.body = body;
     this.topic = topic;
     this.schema = schema;
@@ -43,8 +43,8 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: body = (com.blackbaud.pacazurekafka.domain.body)value$; break;
-    case 1: topic = (com.blackbaud.pacazurekafka.domain.topic)value$; break;
+    case 0: body = (com.blackbaud.pocazurekafka.domain.body)value$; break;
+    case 1: topic = (com.blackbaud.pocazurekafka.domain.topic)value$; break;
     case 2: schema = (java.lang.CharSequence)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -53,7 +53,7 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
   /**
    * Gets the value of the 'body' field.
    */
-  public com.blackbaud.pacazurekafka.domain.body getBody() {
+  public com.blackbaud.pocazurekafka.domain.body getBody() {
     return body;
   }
 
@@ -61,14 +61,14 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
    * Sets the value of the 'body' field.
    * @param value the value to set.
    */
-  public void setBody(com.blackbaud.pacazurekafka.domain.body value) {
+  public void setBody(com.blackbaud.pocazurekafka.domain.body value) {
     this.body = value;
   }
 
   /**
    * Gets the value of the 'topic' field.
    */
-  public com.blackbaud.pacazurekafka.domain.topic getTopic() {
+  public com.blackbaud.pocazurekafka.domain.topic getTopic() {
     return topic;
   }
 
@@ -76,7 +76,7 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
    * Sets the value of the 'topic' field.
    * @param value the value to set.
    */
-  public void setTopic(com.blackbaud.pacazurekafka.domain.topic value) {
+  public void setTopic(com.blackbaud.pocazurekafka.domain.topic value) {
     this.topic = value;
   }
 
@@ -96,18 +96,18 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
   }
 
   /** Creates a new entitlement RecordBuilder */
-  public static com.blackbaud.pacazurekafka.domain.entitlement.Builder newBuilder() {
-    return new com.blackbaud.pacazurekafka.domain.entitlement.Builder();
+  public static entitlement.Builder newBuilder() {
+    return new entitlement.Builder();
   }
   
   /** Creates a new entitlement RecordBuilder by copying an existing Builder */
-  public static com.blackbaud.pacazurekafka.domain.entitlement.Builder newBuilder(com.blackbaud.pacazurekafka.domain.entitlement.Builder other) {
-    return new com.blackbaud.pacazurekafka.domain.entitlement.Builder(other);
+  public static entitlement.Builder newBuilder(entitlement.Builder other) {
+    return new entitlement.Builder(other);
   }
   
   /** Creates a new entitlement RecordBuilder by copying an existing entitlement instance */
-  public static com.blackbaud.pacazurekafka.domain.entitlement.Builder newBuilder(com.blackbaud.pacazurekafka.domain.entitlement other) {
-    return new com.blackbaud.pacazurekafka.domain.entitlement.Builder(other);
+  public static entitlement.Builder newBuilder(entitlement other) {
+    return new entitlement.Builder(other);
   }
   
   /**
@@ -116,17 +116,17 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<entitlement>
     implements org.apache.avro.data.RecordBuilder<entitlement> {
 
-    private com.blackbaud.pacazurekafka.domain.body body;
-    private com.blackbaud.pacazurekafka.domain.topic topic;
+    private com.blackbaud.pocazurekafka.domain.body body;
+    private com.blackbaud.pocazurekafka.domain.topic topic;
     private java.lang.CharSequence schema;
 
     /** Creates a new Builder */
     private Builder() {
-      super(com.blackbaud.pacazurekafka.domain.entitlement.SCHEMA$);
+      super(entitlement.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(com.blackbaud.pacazurekafka.domain.entitlement.Builder other) {
+    private Builder(entitlement.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.body)) {
         this.body = data().deepCopy(fields()[0].schema(), other.body);
@@ -143,8 +143,8 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
     }
     
     /** Creates a Builder by copying an existing entitlement instance */
-    private Builder(com.blackbaud.pacazurekafka.domain.entitlement other) {
-            super(com.blackbaud.pacazurekafka.domain.entitlement.SCHEMA$);
+    private Builder(entitlement other) {
+            super(entitlement.SCHEMA$);
       if (isValidValue(fields()[0], other.body)) {
         this.body = data().deepCopy(fields()[0].schema(), other.body);
         fieldSetFlags()[0] = true;
@@ -160,12 +160,12 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
     }
 
     /** Gets the value of the 'body' field */
-    public com.blackbaud.pacazurekafka.domain.body getBody() {
+    public com.blackbaud.pocazurekafka.domain.body getBody() {
       return body;
     }
     
     /** Sets the value of the 'body' field */
-    public com.blackbaud.pacazurekafka.domain.entitlement.Builder setBody(com.blackbaud.pacazurekafka.domain.body value) {
+    public entitlement.Builder setBody(com.blackbaud.pocazurekafka.domain.body value) {
       validate(fields()[0], value);
       this.body = value;
       fieldSetFlags()[0] = true;
@@ -178,19 +178,19 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
     }
     
     /** Clears the value of the 'body' field */
-    public com.blackbaud.pacazurekafka.domain.entitlement.Builder clearBody() {
+    public entitlement.Builder clearBody() {
       body = null;
       fieldSetFlags()[0] = false;
       return this;
     }
 
     /** Gets the value of the 'topic' field */
-    public com.blackbaud.pacazurekafka.domain.topic getTopic() {
+    public com.blackbaud.pocazurekafka.domain.topic getTopic() {
       return topic;
     }
     
     /** Sets the value of the 'topic' field */
-    public com.blackbaud.pacazurekafka.domain.entitlement.Builder setTopic(com.blackbaud.pacazurekafka.domain.topic value) {
+    public entitlement.Builder setTopic(com.blackbaud.pocazurekafka.domain.topic value) {
       validate(fields()[1], value);
       this.topic = value;
       fieldSetFlags()[1] = true;
@@ -203,7 +203,7 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
     }
     
     /** Clears the value of the 'topic' field */
-    public com.blackbaud.pacazurekafka.domain.entitlement.Builder clearTopic() {
+    public entitlement.Builder clearTopic() {
       topic = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -215,7 +215,7 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
     }
     
     /** Sets the value of the 'schema' field */
-    public com.blackbaud.pacazurekafka.domain.entitlement.Builder setSchema$(java.lang.CharSequence value) {
+    public entitlement.Builder setSchema$(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.schema = value;
       fieldSetFlags()[2] = true;
@@ -228,7 +228,7 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
     }
     
     /** Clears the value of the 'schema' field */
-    public com.blackbaud.pacazurekafka.domain.entitlement.Builder clearSchema$() {
+    public entitlement.Builder clearSchema$() {
       schema = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -238,8 +238,8 @@ public class entitlement extends org.apache.avro.specific.SpecificRecordBase imp
     public entitlement build() {
       try {
         entitlement record = new entitlement();
-        record.body = fieldSetFlags()[0] ? this.body : (com.blackbaud.pacazurekafka.domain.body) defaultValue(fields()[0]);
-        record.topic = fieldSetFlags()[1] ? this.topic : (com.blackbaud.pacazurekafka.domain.topic) defaultValue(fields()[1]);
+        record.body = fieldSetFlags()[0] ? this.body : (com.blackbaud.pocazurekafka.domain.body) defaultValue(fields()[0]);
+        record.topic = fieldSetFlags()[1] ? this.topic : (com.blackbaud.pocazurekafka.domain.topic) defaultValue(fields()[1]);
         record.schema = fieldSetFlags()[2] ? this.schema : (java.lang.CharSequence) defaultValue(fields()[2]);
         return record;
       } catch (Exception e) {

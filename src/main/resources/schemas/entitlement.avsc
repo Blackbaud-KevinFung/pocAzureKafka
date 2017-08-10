@@ -1,6 +1,6 @@
 [
   {
-    "namespace": "com.blackbaud.pacazurekafka.domain",
+    "namespace": "com.blackbaud.pocazurekafka.domain",
     "type": "record",
     "name": "body",
     "fields": [
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "namespace": "com.blackbaud.pacazurekafka.domain",
+    "namespace": "com.blackbaud.pocazurekafka.domain",
     "type": "record",
     "name": "topic",
     "fields": [
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "namespace": "com.blackbaud.pacazurekafka.domain",
+    "namespace": "com.blackbaud.pocazurekafka.domain",
     "type": "record",
     "name": "entitlement",
     "fields": [

@@ -25,7 +25,7 @@ public class AzureServiceBusMessageReader {
         try {
             log.info("creating subscription client");
             subscriptionClient = new SubscriptionClient(new ConnectionStringBuilder(connectionString, topicName + "/subscriptions/" + subscriptionName), ReceiveMode.PeekLock);
-            subscriptionClient.registerMessageHandler(new MessageHandler(subscriptionClient), new MessageHandlerOptions(1, false, Duration.ofMinutes(1)));
+            subscriptionClient.registerMessageHandler(new MessageHandler(subscriptionClient), new MessageHandlerOptions(1, false, Duration.ofMinutes(10)));
         } catch (InterruptedException | ServiceBusException e) {
             log.error("something went wrong with the service bus");
         }
