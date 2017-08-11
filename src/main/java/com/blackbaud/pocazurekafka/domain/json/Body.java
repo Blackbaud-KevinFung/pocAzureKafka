@@ -3,6 +3,7 @@ package com.blackbaud.pocazurekafka.domain.json;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import org.apache.avro.reflect.Nullable;
 
 @Getter
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -11,7 +12,7 @@ public class Body {
     private String legalEntityId;
 
     @JsonProperty("EnvironmentId")
-    private String envrionmentId;
+    private String environmentId;
 
     @JsonProperty("EntitlementId")
     private String entitlementId;
@@ -20,6 +21,7 @@ public class Body {
     private String entitlementType;
 
     @JsonProperty("ErrorMessage")
+    @Nullable
     private String errorMessage;
 
     @JsonProperty("EntitlementEventActionType")

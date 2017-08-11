@@ -62,3 +62,7 @@ swagger {
 publishing_ext {
     publication('client')
 }
+
+kafka {
+    topic "TEST-ENTITLEMENT_MAPPING"
+}
